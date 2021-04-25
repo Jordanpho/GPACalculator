@@ -21,13 +21,5 @@ Also, these can be set to something else if you really want, except the variable
 4.  Type in the following the command to calculate your GPA.
 -}
 
-gpa :: (Num a) => [a]  -> a
-gpa xs = (sum' xs) / (length' xs)
-
-length' :: (Num a) => [a] -> a  
-length' [] = 0  
-length' (_:xs) = 1 + length' xs
-
-sum' :: (Num a) => [a] -> a  
-sum' [] = 0  
-sum' (x:xs) = x + sum' xs 
+gpa :: (Real a, Fractional b) => [a] -> b
+gpa xs = (realToFrac (sum xs) / (fromIntegral $ length xs))
