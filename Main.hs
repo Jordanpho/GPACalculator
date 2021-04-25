@@ -22,4 +22,4 @@ c = 2
 d = 1
 
 gpa :: (Real a, Fractional b) => [a] -> b
-gpa xs = (realToFrac (sum xs) / (fromIntegral $ length xs))
+gpa xs = 2 * (realToFrac (sum xs) / (fromIntegral $ length xs))
