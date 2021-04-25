@@ -12,14 +12,14 @@ Also, these can be set to something else if you really want, except the variable
 3.  Type in the following the command to calculate your GPA. Use the following variables for course levels as well as grades.
 -}
 
-cp = 0     -- All of these are variables which are used for inputs.
+cp = 0.0     -- All of these are variables which are used for inputs.
 hon = 0.5
-ap = 1
+ap = 1.0
 apPlus = 1.5
-a = 4
-b = 3
-c = 2
-d = 1
+a = 4.0
+b = 3.0
+c = 2.0
+d = 1.0
 
 {-
 
